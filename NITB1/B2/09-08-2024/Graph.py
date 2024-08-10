@@ -8,7 +8,7 @@ def printAllPath(graph,src,des,visited,psf):
     for i in range(len(nbrs)):
         if nbrs[i] == 1:
             if visited[i] == 0:
-                visited[i] = 1
+                visited[i] = 0
                 printAllPath(graph,i,des,visited, psf+"->"+str(i))
                 visited[i] = 0
     return False
